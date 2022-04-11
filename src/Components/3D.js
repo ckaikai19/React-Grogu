@@ -46,7 +46,7 @@ export function Threejs(){
         Floor.position.y = -15;
 
 
-        const light = new THREE.DirectionalLight(0xffffff, 1);
+        const light = new THREE.AmbientLight(0xffffff, 1);
         const backLight = new THREE.DirectionalLight(0xffffff, 1);
         const topLight = new THREE.DirectionalLight(0xffffff, 1);
 
@@ -58,8 +58,8 @@ export function Threejs(){
         
         // scene.add( axesHelper );
         scene.add( light );
-        scene.add( backLight );
-        scene.add( topLight );
+        // scene.add( backLight );
+        // scene.add( topLight );
         // scene.add( Sphere ); 
         // scene.add( Floor );
 
